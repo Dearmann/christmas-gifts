@@ -1,0 +1,20 @@
+<html>
+<body>
+<center>
+    <input type="text" id="presents"/><br>
+    <button onclick="add()">Dodaj</button><br>
+    <button onclick="generate()">Generuj</button><br>
+</center>
+<script type="text/javascript">
+    function add()
+    {
+        activity.addPresent(document.getElementById("presents").value);
+        document.getElementById("presents").value = '';
+    }
+    function generate()
+    {
+        document.getElementById("date").value=activity.generateList();
+    }
+</script>
+</body>
+</html>

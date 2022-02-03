@@ -1,0 +1,28 @@
+<html>
+<style>
+body {
+  background-image: url('kartka.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+#presentList {
+  position: relative;
+  top: 93px;
+  left: 15px;
+  font-size: 25px;
+  border: 1px solid;
+  width: 300px;
+  height: 200px;
+  overflow: auto;
+}
+</style>
+<body>
+<div id="presentList">test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br></div>
+<script type="text/javascript">
+    (function getPresents() {
+        document.getElementById("presentList").innerHTML = activity.getPresents();
+        })();
+</script>
+</body>
+</html>
